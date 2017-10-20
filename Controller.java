@@ -1,7 +1,7 @@
 package sample;
 
-//import javafx.event.ActionEvent;
-//import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,28 +16,15 @@ import java.io.IOException;
 
 
 public class Controller {
-    @FXML
-    private Text actiontarget;
+    //@FXML
+    //private Text actiontarget;
 
-    @FXML protected void handleSubmitButtonAction(ActionEvent event) {
-        //actiontarget.setText("Loading...");
-        Parent root;
-        try {
-            root = FXMLLoader.load(getClass().getResource("secondstage.fxml"));
-            Stage stage = new Stage();
-            stage.setTitle("MEHC-B");
-            stage.setScene(new Scene(root, 500, 650));
-            stage.show();
-            // Hide this current window (if this is what you want)
-            ((Node)(event.getSource())).getScene().getWindow().hide();
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
+    @FXML protected void handleSubmitButtonAction(ActionEvent event) throws IOException{
+        //when button is clicked, it loads a new scene from the secondstage.fxml file.
+        // to be written
 
-        // https://www.youtube.com/watch?v=FkSUQXJXwrQ
-        //this is just for seeing what you can find on here
+
+
     }
 
 }
-
