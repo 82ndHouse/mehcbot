@@ -15,16 +15,17 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 
-public class Controller {
-    //@FXML
-    //private Text actiontarget;
-
-    @FXML protected void handleSubmitButtonAction(ActionEvent event) throws IOException{
-        //when button is clicked, it loads a new scene from the secondstage.fxml file.
-        // to be written
-
-
-
-    }
-
-}
+import java.io.IOException;                                                                     
+                                                                                                
+                                                                                                
+public class Controller {                                                                       
+                                                                                                
+    @FXML protected void handleSubmitButtonAction(ActionEvent event) throws IOException{        
+        Scene scene;                                                                            
+        GridPane pane2 = new GridPane();                                                        
+        scene = new Scene(pane2, 500,600 );                                                     
+                                                                                                
+                                                                                                
+    }                                                                                           
+                                                                                                
+}                                                                                               
